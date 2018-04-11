@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Html with Form</title>
+</head>
+<body>
+    <form action="http://localhost:3000/" method="post">
+        <fieldset>
+        <legend>Your info</legend>
+        <div>
+            <label for="name" class="label1">Name:</label>
+            <input type="text" id="name" name="user_name" autofocus>
+        </div>
+        <div>
+            <label for="dob" class="label1">Date of Birth:</label>
+            <input type="date" id="dob" name="user_dob">
+        </div>
+        <div>
+            <label for="mail" class="label1">E-mail:</label>
+            <input type="email" id="mail" name="user_email">
+        </div>
+        <div>
+            <label for="phone" class="label1">Phone:</label>
+            <input type="tel" id="phone" name="user_phone">
+        </div> 
+        <div>
+            <label for="homepage" class="label1">Homepage:</label>
+            <input type="url" id="homepage" name="user_homepage">
+        </div>
+        <div>
+            <label for="favcolor" class="label1">Favorite Color:</label>
+            <input type="color" id="favcolor" name="user_favcolor">
+        </div>
+        </fieldset> 
+        <br>  
+        <fieldset >
+        <legend>What is your preferred method of communication?</legend>
+            <input type="radio" name="communicationMethod" id="emailradio" checked><label for="emailradio">E-Mail</label>
+            <input type="radio" name="communicationMethod" id="phoneradio" ><label for="phoneradio">Phone</label>
+            <input type="radio" name="communicationMethod" id="msgradio" ><label for="msgradio">Message in a bottle</label>
+        </fieldset>  
+        <br>
+        <fieldset >
+            <legend>Which devices do you use?</legend>
+                <input type="checkbox" name="devices" id="ios" checked>iOS (iPhone/iPad) <br>
+                <input type="checkbox" name="devices" id="android" >Android <br>
+                <input type="checkbox" name="devices" id="mac" >Mac<br>
+                <input type="checkbox" name="devices" id="windows">Windows <br>
+                <input type="checkbox" name="devices" id="android">Chrome OS (Chromebook)<br>
+                <input type="checkbox" name="devices" id="mac">Linux
+        </fieldset> 
+        <br> 
+        <fieldset >
+            <legend>Your inquiry</legend>
+            <div>
+                What is your inquiry about?
+                <select>
+                    <option value="feedback">Providing Feedback</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="plan" class="label1">Phone:</label>
+                <input type="text" id="plan" name="user_plan" value="Premium Subscriber" disabled>
+            </div> 
+            <div>
+                <label for="msg" class="label1">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+        </fieldset> 
+        <br>   
+        <div class="button">
+            <button type="submit">Send your message</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
